@@ -15,8 +15,7 @@ I am working on this.
 ## ClientPlayPacket::TeleportConfirm
 https://wiki.vg/Protocol#Teleport_Confirm
 
-As you can see the documentation for this packet is somewhat lacking. It just says the client should respond to a client bound "Player Position And Look" by sending this packet. 
-It does not specify what should happen on failure to do so. It would be helpful if someone could figure out if we need to do anything with this packet.
+As you can see the documentation for this packet is somewhat lacking. It just says the client should respond to a client bound "Player Position And Look" by sending this packet. It does not specify what should happen on failure to do so. It would be helpful if someone could figure out if we need to do anything with this packet.
 
 -------------------
 ## ClientPlayPacket::QueryBlockNbt(_)
@@ -252,11 +251,13 @@ Teleports the player to the given entity. The player must be in spectator mode.
 -----------------------------------
 
 # UseItem
+
 [wiki](https://wiki.vg/Protocol#Use_Item)
 To implement this feature we need a working inventory system. 
 To implement this we need to do the same basic thing as for 
 PlayerAbilities. This should also just trigger a event.
 And then we implement systems that react on those events. 
+
 -----------------------------
 
 
